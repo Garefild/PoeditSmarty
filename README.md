@@ -58,3 +58,9 @@ native:
 {"Text to be localized"|_}
 {_("Text to be localized")}
 ```
+
+`_` Varies according to keyword
+```
+{"Text to be localized"|<keyword>}
+{<keyword>("Text to be localized")}
+```
