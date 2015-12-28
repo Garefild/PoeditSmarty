@@ -49,17 +49,17 @@ If you notice oversights, please send me msg.
 
 ## Supported formats
 
-block.t plugin:
 ```
 {t}Text to be localized{/t}
 ```
-native:
+
 ```
 {"Text to be localized"|_}
 {_("Text to be localized")}
 ```
 
 `_` Varies according to keyword
+
 ```
 {"Text to be localized"|<keyword>}
 {<keyword>("Text to be localized")}
