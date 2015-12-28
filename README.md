@@ -17,7 +17,7 @@ If you notice oversights, please send me msg.
 * You need a java run it.
 * Download sources and unpack to any folder.
 * Copy the file PoeditSmarty.jar predetermined folder (And remember the path).  For example: C:\Program Files\Poedit\Gettext Tools\bin
-* get java path (And remember the path). For example: C:\Program Files\Java\jdk1.8.0_65\bin\java.exe
+* get java path (And remember the path). For example: C:\Program Files\Java\jdk\bin\java.exe
 
 ### Parser params:
 
