@@ -24,7 +24,7 @@ If you notice oversights, please send me msg.
 * Create new parser in Poedit: File -> Preferences -> Parsers -> New
 * Language: `Smarty`
 * Parser command: `<java.exe path>` -jar `<PoeditSmarty.jar path>` -o %o -c %C -k %K -f %F  
-* Parser command For example: `<C:\Program Files\Java\jdk\bin\java>` -jar `C:\Program Files\Poedit\GettextTools\bin\PoeditSmarty.jar` -o %o -c %C -k %K -f %F 
+* Parser command For example: "C:\Program Files\Java\jdk\bin\java" -jar "C:\Program Files\Poedit\GettextTools\bin\PoeditSmarty.jar" -o %o -c %C -k %K -f %F 
 * List of extensions: `*.tpl`
 * An item in keywords list: `%k`
 * An item in input files list: `%f`
@@ -32,7 +32,7 @@ If you notice oversights, please send me msg.
 
 ### global info
 * if java set as `System variable` does not need an absolute path to java. 
-* Parser command For example: java -jar `C:\Program Files\Poedit\GettextTools\bin\PoeditSmarty.jar` -o %o -c %C -k %K -f %F 
+* Parser command For example: java -jar "C:\Program Files\Poedit\GettextTools\bin\PoeditSmarty.jar" -o %o -c %C -k %K -f %F 
 * It also has support in cmd.
 
 ### Support cmd parameters
