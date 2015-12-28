@@ -1,27 +1,26 @@
 Commandline: Users Guide
 ========================
 
-/**                                                I
- *
- *  GGGGG      A       RRRR     EEEEEE   FFFFFF    I    L        DDDD
- * G          A A      R   R    E        F         I    L        D   D
- * G GGG     A   A     R RR     EEEEEE   FFFFFF    I    L        D    D
- * G    G   AAAAAAA    R  R     E        F         I    L        D   D
- *  GGGG   A       A   R   R    EEEEEE   F         I    LLLLLL   DDDD
- *
- * Powered by Garefild
- * @Author Mike 
- * @Copyright 2010-2035  
- *
- *
- * ********************************************************************************
- * **              -= YOU MAY NOT REMOVE OR CHANGE THIS NOTICE =-                 *
- * ** --------------------------------------------------------------------------- *
- * **  Java PoeditSmarty
- * **  Developed by:  Garefild <Garefild2@gmail.com>                              *
- * ********************************************************************************
- *
- */
+                                                   I
+ 
+    GGGGG      A       RRRR     EEEEEE   FFFFFF    I    L        DDDD
+   G          A A      R   R    E        F         I    L        D   D
+   G GGG     A   A     R RR     EEEEEE   FFFFFF    I    L        D    D
+   G    G   AAAAAAA    R  R     E        F         I    L        D   D
+    GGGG   A       A   R   R    EEEEEE   F         I    LLLLLL   DDDD
+ 
+   Powered by Garefild
+   @Author Mike 
+   @Copyright 2010-2035  
+  
+
+   ********************************************************************************
+   **              -= YOU MAY NOT REMOVE OR CHANGE THIS NOTICE =-                 *
+   ** --------------------------------------------------------------------------- *
+   **  Java PoeditSmarty
+   **  Developed by:  Garefild <Garefild2@gmail.com>                              *
+   ********************************************************************************
+
 
 What is CommandLine
 -------------------
