@@ -1,7 +1,7 @@
 Users Guide
 ========================
 
-What is CommandLine
+What is PoeditSmarty
 -------------------
 
 Library for syncing gettext catalogs with Smarty sources. 
