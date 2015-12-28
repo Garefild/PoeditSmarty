@@ -31,9 +31,9 @@ If you notice oversights, please send me msg.
 * Source code charset: `%c`
 
 ### global info
-if java set as `System variable` does not need an absolute path to java. \n
-Parser command For example: java -jar `C:\Program Files\Poedit\GettextTools\bin\PoeditSmarty.jar` -o %o -c %C -k %K -f %F \n
-It also has support in cmd.
+* if java set as `System variable` does not need an absolute path to java. 
+* Parser command For example: java -jar `C:\Program Files\Poedit\GettextTools\bin\PoeditSmarty.jar` -o %o -c %C -k %K -f %F 
+* It also has support in cmd.
 
 ### Support cmd parameters
 
