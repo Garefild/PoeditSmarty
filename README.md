@@ -6,7 +6,7 @@ What is PoeditSmarty
 
 Library for syncing gettext catalogs with Smarty sources. 
 Library parses files and writes results as xgettext files, whose are processed by Poedit parser.
-Soon I will exe version without java (I have so much time)
+Soon I will exe version without java (I dont have so much time)
 
 If you notice oversights, please send me msg.
 
