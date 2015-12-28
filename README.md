@@ -10,16 +10,16 @@ Soon I will exe version without java (I have so much time)
 
 If you notice oversights, please send me msg.
 
-### Installation
+## Installation
 
-## set file in path
+### set file in path
 
 * You need a java run it.
 * Download sources and unpack to any folder.
 * Copy the file PoeditSmarty.jar predetermined folder (And remember the path).  For example: C:\Program Files\Poedit\Gettext Tools\bin
 * get java path (And remember the path). For example: C:\Program Files\Java\jdk1.8.0_65\bin\java.exe
 
-## Parser params:
+### Parser params:
 
 * Create new parser in Poedit: File -> Preferences -> Parsers -> New
 * Language: `Smarty`
@@ -30,12 +30,12 @@ If you notice oversights, please send me msg.
 * An item in input files list: `%f`
 * Source code charset: `%c`
 
-## global info
+### global info
 if java set as `System variable` does not need an absolute path to java.
 Parser command For example: java -jar `C:\Program Files\Poedit\GettextTools\bin\PoeditSmarty.jar` -o %o -c %C -k %K -f %F 
 It also has support in cmd.
 
-## Support cmd parameters
+### Support cmd parameters
 
 * -c , --code            <Args>  <Required> : charset flag.
 * -d , --debug                              : enable debug.
@@ -44,10 +44,10 @@ It also has support in cmd.
 * -k , --key             <Args>  <Required> : list of keywords.
 * -o , --out             <Args>  <Required> : expands to the name of output file.
 
-## Known issues
+### Known issues
 * I have not found, if found then reported me
 
-### Supported formats
+## Supported formats
 
 block.t plugin:
 ```
