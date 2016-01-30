@@ -83,3 +83,5 @@ If you notice oversights, please send me msg.
 {"Text to be localized"|<keyword>}
 {<keyword>("Text to be localized")}
 ```
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Garefild/poeditsmarty/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
