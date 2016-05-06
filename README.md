@@ -9,6 +9,7 @@ Library parses files and writes results as xgettext files, whose are processed b
 Soon I will make exe version without java (I dont have so much time)
 
 If you notice oversights, please send me msg.
+version 1.3
 
 ## Installation - Java
 
@@ -34,25 +35,6 @@ If you notice oversights, please send me msg.
 * if java set as `System variable` does not need an absolute path to java. 
 * Parser command For example: java -jar "C:\Program Files\Poedit\GettextTools\bin\PoeditSmarty.jar" -o %o -c %C -k %K -f %F 
 * It also has support in cmd.
-
-## Installation - ExE
-
-### set file in path
-
-* You need a NetFramework to run it.
-* Download sources and unpack to any folder.
-* Copy the file PoeditSmarty.exe predetermined folder (And remember the path).  For example: C:\Program Files\Poedit\Gettext Tools\bin
-
-### Parser params:
-
-* Create new parser in Poedit: File -> Preferences -> Parsers -> New
-* Language: `Smarty`
-* Parser command: `<PoeditSmarty.jar path>` -o %o -c %C -k %K -f %F  (if the file in -> "C:\Program Files\Poedit\Gettext Tools\bin" [poedit foder] you does not need an absolute path)
-* Parser command For example: PoeditSmarty -o %o -c %C -k %K -f %F
-* List of extensions: `*.tpl`
-* An item in keywords list: `%k`
-* An item in input files list: `%f`
-* Source code charset: `%c`
 
 ### Support cmd parameters
 
