@@ -11,6 +11,8 @@ Soon I will make exe version without java (I dont have so much time)
 If you notice oversights, please send me msg.
 version 1.3
 
+![alt tag](http://img.prntscr.com/img?url=http://i.imgur.com/exl1rSP.png)
+
 ## Installation - Java
 
 ### set file in path
