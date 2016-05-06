@@ -12,6 +12,8 @@ If you notice oversights, please send me msg.
 version 1.3
 
 ![alt tag](http://img.prntscr.com/img?url=http://i.imgur.com/exl1rSP.png)
+![alt tag](http://img.prntscr.com/img?url=http://i.imgur.com/DHXiBUW.jpg)
+![alt tag](http://img.prntscr.com/img?url=http://i.imgur.com/ZoTwNLR.jpg)
 
 ## Installation - Java
 
