@@ -47,7 +47,7 @@ If you notice oversights, please send me msg.
 
 * Create new parser in Poedit: File -> Preferences -> Parsers -> New
 * Language: `Smarty`
-* Parser command: `<PoeditSmarty.exe path>` -o %o -c %C -k %K -f %F  (if the file in -> "C:\Program Files\Poedit\Gettext Tools\bin" [poedit foder] you does not need an absolute path)
+* Parser command: `<PoeditSmarty.jar path>` -o %o -c %C -k %K -f %F  (if the file in -> "C:\Program Files\Poedit\Gettext Tools\bin" [poedit foder] you does not need an absolute path)
 * Parser command For example: PoeditSmarty -o %o -c %C -k %K -f %F
 * List of extensions: `*.tpl`
 * An item in keywords list: `%k`
