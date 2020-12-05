@@ -11,9 +11,9 @@ Soon I will make C++ version without java.
 If you notice oversights, please send me msg.
 version 3.0.0
 
-![alt tag](https://github.com/Garefild/PoeditSmarty/tree/master/java/Screenshot_1.png)
-![alt tag](https://github.com/Garefild/PoeditSmarty/tree/master/java/Screenshot_2.png)
-![alt tag](https://github.com/Garefild/PoeditSmarty/tree/master/java/Screenshot_3.png)
+![alt tag](https://raw.githubusercontent.com/Garefild/PoeditSmarty/master/Images/Screenshot_1.png)
+![alt tag](https://raw.githubusercontent.com/Garefild/PoeditSmarty/master/Images/Screenshot_2.png)
+![alt tag](https://raw.githubusercontent.com/Garefild/PoeditSmarty/master/Images/Screenshot_3.png)
 
 ## Installation - Java
 
@@ -70,11 +70,13 @@ version 3.0.0
 
 ```
 @niklausburren tnx :)
+
 {_("Text to be (localized)")}
 ```
 
 ```
 @justanpo tnx :)
+
 { ngettext("product", "products", $products_count) }
 ```
 
@@ -86,6 +88,7 @@ version 3.0.0
 ```
 
 ```
-@IacopoOrtis
+@IacopoOrtis tnx :)
+
 {t nick=$userName day=$dayOfTheWeek}Hello %1, today is %2.{/t}
 ```
