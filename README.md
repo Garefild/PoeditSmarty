@@ -1,11 +1,8 @@
-Users Guide
+What is PoeditSmarty
 ========================
 
-What is PoeditSmarty
--------------------
-
 Library for syncing GetText catalogs with Smarty sources. 
-Library parses files and writes results as xgettext files, whose are processed by Poedit parser.
+Library parses files and writes results as xgettext files, which are processed by Poedit parser.
 Soon I will make C++ version without java.
 
 If you notice oversights, please send me msg.
@@ -15,12 +12,15 @@ version 3.0.0
 ![alt tag](https://raw.githubusercontent.com/Garefild/PoeditSmarty/master/Images/Screenshot_2.png)
 ![alt tag](https://raw.githubusercontent.com/Garefild/PoeditSmarty/master/Images/Screenshot_3.png)
 
+Users Guide
+========================
+
 ## Installation - Java
 
 ### set file in path
 
-* You need java to run it.
-* Download sources and unpack to any folder.
+* You need Java to run it.
+* Download sources and unpack them to any folder.
 * Copy the file PoeditSmarty.jar predetermined folder (And remember the path).  For example: C:\Program Files\Poedit\Gettext Tools\bin
 * get java path (And remember the path). For example: C:\Program Files\Java\jdk\bin\java.exe
 
@@ -36,9 +36,9 @@ version 3.0.0
 * Source code charset: `%c`
 
 ### global info
-* if java set as `System variable` does not need an absolute path to java. 
+* If java is set as a `System variable` does not need an absolute path to java.
 * Parser command For example: java -jar "C:\Program Files\Poedit\GettextTools\bin\PoeditSmarty.jar" -o %o -c %C -k %K -f %F 
-* It also has support in cmd.
+* It also has support in cli.
 
 ### Support cmd parameters
 
@@ -50,7 +50,7 @@ version 3.0.0
 * -o , --out             <Args>  <Required> : expands to the name of output file.
 
 ### Known issues
-* I have not found, if found then reported me
+* I have not found, if found then reported.
 
 ## Supported formats
 
