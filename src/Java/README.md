@@ -1,15 +1,6 @@
 Users Guide
 ========================
 
-What is PoeditSmarty
--------------------
-
-Library for syncing gettext catalogs with Smarty sources. 
-Library parses files and writes results as xgettext files, whose are processed by Poedit parser.
-Soon I will make exe version without java (I dont have so much time)
-
-If you notice oversights, please send me msg.
-
 ## Installation - Java
 
 ### set file in path
@@ -51,16 +42,36 @@ If you notice oversights, please send me msg.
 
 ```
 {t}Text to be localized{/t}
+{t params } 
+    multi line with params 
+    Line 1
+    Line 2 ...
+{/t}
 ```
 
 ```
-{"Text to be localized"|_}
-{_("Text to be localized")}
+{ "Text to be localized"|_ }
+{ _("Text to be localized") }
+```
+
+```
+@niklausburren tnx :)
+{_("Text to be (localized)")}
+```
+
+```
+@justanpo tnx :)
+{ ngettext("product", "products", $products_count) }
 ```
 
 `_` Varies according to keyword
 
 ```
-{"Text to be localized"|<keyword>}
-{<keyword>("Text to be localized")}
+{ "Text to be localized"|<keyword> }
+{ <keyword>("Text to be localized") }
+```
+
+```
+@IacopoOrtis
+{t nick=$userName day=$dayOfTheWeek}Hello %1, today is %2.{/t}
 ```

@@ -4,22 +4,22 @@ Users Guide
 What is PoeditSmarty
 -------------------
 
-Library for syncing gettext catalogs with Smarty sources. 
+Library for syncing GetText catalogs with Smarty sources. 
 Library parses files and writes results as xgettext files, whose are processed by Poedit parser.
-Soon I will make exe version without java (I dont have so much time)
+Soon I will make C++ version without java.
 
 If you notice oversights, please send me msg.
-version 1.3
+version 3.0.0
 
-![alt tag](http://img.prntscr.com/img?url=http://i.imgur.com/exl1rSP.png)
-![alt tag](http://img.prntscr.com/img?url=http://i.imgur.com/DHXiBUW.jpg)
-![alt tag](http://img.prntscr.com/img?url=http://i.imgur.com/ZoTwNLR.jpg)
+![alt tag](https://github.com/Garefild/PoeditSmarty/tree/master/java/Screenshot_1.png)
+![alt tag](https://github.com/Garefild/PoeditSmarty/tree/master/java/Screenshot_2.png)
+![alt tag](https://github.com/Garefild/PoeditSmarty/tree/master/java/Screenshot_3.png)
 
 ## Installation - Java
 
 ### set file in path
 
-* You need a java to run it.
+* You need java to run it.
 * Download sources and unpack to any folder.
 * Copy the file PoeditSmarty.jar predetermined folder (And remember the path).  For example: C:\Program Files\Poedit\Gettext Tools\bin
 * get java path (And remember the path). For example: C:\Program Files\Java\jdk\bin\java.exe
@@ -56,18 +56,36 @@ version 1.3
 
 ```
 {t}Text to be localized{/t}
+{t params } 
+    multi line with params 
+    Line 1
+    Line 2 ...
+{/t}
 ```
 
 ```
-{"Text to be localized"|_}
-{_("Text to be localized")}
+{ "Text to be localized"|_ }
+{ _("Text to be localized") }
+```
+
+```
+@niklausburren tnx :)
+{_("Text to be (localized)")}
+```
+
+```
+@justanpo tnx :)
+{ ngettext("product", "products", $products_count) }
 ```
 
 `_` Varies according to keyword
 
 ```
-{"Text to be localized"|<keyword>}
-{<keyword>("Text to be localized")}
+{ "Text to be localized"|<keyword> }
+{ <keyword>("Text to be localized") }
 ```
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Garefild/poeditsmarty/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+```
+@IacopoOrtis
+{t nick=$userName day=$dayOfTheWeek}Hello %1, today is %2.{/t}
+```
