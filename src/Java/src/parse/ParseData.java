@@ -226,10 +226,10 @@ public class ParseData {
                 continue;
             }
 
-            String[] splits = matcherTag.group(3).split(", ");
+            String[] splits = matcherTag.group(3).split(",");
 
-            this._potFile.addKey(this._filePath, lineNumber,  splits[0].replaceAll("[\"']", ""));
-            this._potFile.addKey(this._filePath, lineNumber,  splits[1].replaceAll("[\"']", ""));
+            this._potFile.addKey(this._filePath, lineNumber,  splits[0].trim().replaceAll("[\"']", ""));
+            this._potFile.addKey(this._filePath, lineNumber,  splits[1].trim().replaceAll("[\"']", ""));
         }
     }
 
