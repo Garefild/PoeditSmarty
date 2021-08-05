@@ -92,3 +92,12 @@ Users Guide
 
 {t nick=$userName day=$dayOfTheWeek}Hello %1, today is %2.{/t}
 ```
+    
+```
+@hokascha tnx :)
+
+
+{ ngettext("test","tests",2) }
+{ ngettext("test", "tests", 2) }
+{ ngettext( "test" , "tests" , 2 ) }
+```    
