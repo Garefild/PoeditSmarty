@@ -8,6 +8,15 @@ pub const xParsedArg = struct {
     allocator: Allocator,
 
     pub fn deinit(self: *xParsedArg) void {
+        for (self.values.items) |value| {
+            switch (value) {
+                .string => |str| {
+                    self.allocator.free(str);
+                },
+                else => {},
+            }
+        }
+
         self.values.deinit(self.allocator);
     }
 

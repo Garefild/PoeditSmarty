@@ -1,4 +1,5 @@
 const std = @import("std");
+const xArgsParser = @import("../xargs.zig").xArgsParser;
 const xArgsOption = @import("../types/option.type.zig").xArgsOption;
 
 pub fn printHelp(options: []const xArgsOption) void {
@@ -10,6 +11,22 @@ pub fn printHelp(options: []const xArgsOption) void {
         printDefaultValue(option);
         std.debug.print("\n      {s}\n", .{option.description});
     }
+}
+
+pub fn printMissingArguments(parser: *const xArgsParser, options: []const xArgsOption) void {
+    std.debug.print("\nError: Missing required arguments:\n", .{});
+
+    for (options) |option| {
+        if (option.required and parser.get(option.name) == null) {
+            if (option.alias) |alias| {
+                std.debug.print("  --{s}, -{c}: {s}\n", .{ option.name, alias, option.description });
+            } else {
+                std.debug.print("  --{s}: {s}\n", .{ option.name, option.description });
+            }
+        }
+    }
+
+    std.debug.print("\n", .{});
 }
 
 fn printOptionHeader(option: xArgsOption) void {

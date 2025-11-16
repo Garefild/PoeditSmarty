@@ -25,8 +25,13 @@ pub const xArgsParser = struct {
     pub fn deinit(self: *xArgsParser) void {
         var valueIterator = self.parsed.valueIterator();
         while (valueIterator.next()) |parsedValue| {
-            parsedValue.deinit();
+            parsedValue.*.deinit(); // Add dereference
         }
+
+        for (self.positional.items) |pos| {
+            self.allocator.free(pos);
+        }
+
         self.parsed.deinit();
         self.positional.deinit(self.allocator);
     }
@@ -69,5 +74,9 @@ pub const xArgsParser = struct {
 
     pub fn printHelp(self: *const xArgsParser) void {
         helpPrinter.printHelp(self.options);
+    }
+
+    pub fn printMissingArguments(self: *const xArgsParser) void {
+        helpPrinter.printMissingArguments(self, self.options);
     }
 };

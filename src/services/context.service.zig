@@ -48,9 +48,20 @@ const options = [_]xArgsOption{
     },
 };
 
-pub fn init(allocator: std.mem.Allocator) !void {
+pub const Context = struct {
+    parser: xArgsParser,
+    args: [][:0]u8,
+    allocator: std.mem.Allocator,
+
+    pub fn deinit(self: *Context) void {
+        self.parser.deinit();
+        std.process.argsFree(self.allocator, self.args);
+    }
+};
+
+pub fn init(allocator: std.mem.Allocator) !Context {
     const args = try std.process.argsAlloc(allocator);
-    defer std.process.argsFree(allocator, args);
+    errdefer std.process.argsFree(allocator, args);
 
     var parser = xArgsParser.init(allocator, &options);
     const argv = if (args.len > 1) args[1..] else &[_][]const u8{};
@@ -62,6 +73,39 @@ pub fn init(allocator: std.mem.Allocator) !void {
         }
     }
 
-    try parser.parse(argv);
+    parser.parse(argv) catch |parseError| {
+        if (parseError == error.MissingRequiredOption) {
+            parser.printMissingArguments();
+        } else {
+            std.debug.print("Error parsing arguments: {}\n", .{parseError});
+        }
+        parser.printHelp();
+        parser.deinit();
+        return parseError;
+    };
+
+    if (parser.get("log")) |logArg| {
+        if (logArg.getSingle()) |logValue| {
+            if (logValue.bool) {
+                logger.enable();
+            } else {
+                logger.disable();
+            }
+        }
+    }
+
+    if (parser.get("logFile")) |logFileArg| {
+        if (logFileArg.getSingle()) |logFileValue| {
+            const logPath = logFileValue.string;
+            try logger.initFile(logPath);
+            std.log.info("Logging to file: {s}", .{logPath});
+        }
+    }
+
+    return Context{
+        .parser = parser,
+        .args = args,
+        .allocator = allocator,
+    };
 }
 
